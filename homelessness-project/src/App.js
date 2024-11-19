@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -8,234 +9,196 @@ import {
   Title,
   Tooltip,
   Legend,
+  plugins,
 } from "chart.js";
-import { Line } from "react-chartjs-2";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import { homelessnessData2023 } from "./data/homelessness_data_2023";
+import { homelessnessData2022 } from "./data/homelessness_data_2022";
+import { homelessnessData2021 } from "./data/homelessness_data_2021";
+import { homelessnessData2020 } from "./data/homelessness_data_2020";
+import { homelessnessData2019 } from "./data/homelessness_data_2019";
+import { homelessnessData2018 } from "./data/homelessness_data_2018";
+import { homelessnessData2017 } from "./data/homelessness_data_2017";
+import { homelessnessData2016 } from "./data/homelessness_data_2016";
+import { homelessnessData2015 } from "./data/homelessness_data_2015";
+import { homelessnessData2014 } from "./data/homelessness_data_2014";
+import { homelessnessData2013 } from "./data/homelessness_data_2013";
+import { homelessnessData2012 } from "./data/homelessness_data_2012";
+import { homelessnessData2011 } from "./data/homelessness_data_2011";
+import { homelessnessData2010 } from "./data/homelessness_data_2010";
+import { homelessnessData2009 } from "./data/homelessness_data_2009";
+import { homelessnessData2008 } from "./data/homelessness_data_2008";
+import { homelessnessData2007 } from "./data/homelessness_data_2007";
 
-// Register Chart.js components
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-);
+export default function App() {
+  const [selectedState, setSelectedState] = React.useState("All States");
+  const [selectedCategory, setSelectedCategory] = React.useState("None");
+  const [datasets, setDatasets] = React.useState([]);
 
-const demographicOptions = {
-  overall: { label: "Overall", keys: ["overall"] },
-  age: {
-    label: "Age",
-    keys: ["<18", "18-24", "25-34", "35-54", "55-64", ">64"],
-  },
-  race: {
-    label: "Race/Ethnicity",
-    keys: ["white", "black", "hispanic", "asian", "native", "pacific", "other"],
-  },
-  sexualOrientation: {
-    label: "Sexual Orientation",
-    keys: ["female", "male", "transgender", "nonbinary", "other"],
-  },
-};
+  useEffect(() => {
+    setDatasets(generateDatasets(selectedState, selectedCategory));
+  }, [selectedState, selectedCategory]);
 
-const App = () => {
-  const [selectedDemographic, setSelectedDemographic] = useState("overall");
-  const [selectedState, setSelectedState] = useState("All States");
-  const [chartData, setChartData] = useState({});
-  const [states, setStates] = useState([]);
+  // Register Chart.js components
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    PointElement,
+    LineElement,
+    Title,
+    Tooltip,
+    Legend
+  );
 
-  const loadAllData = async () => {
-    try {
-      const years = Array.from({ length: 2023 - 2007 + 1 }, (_, i) => 2007 + i);
-
-      const allData = await Promise.all(
-        years.map(async (year) => {
-          try {
-            const data = await import(`../data/homelessness_data_${year}.js`);
-            return { year, data: data.homelessnessData };
-          } catch (err) {
-            console.warn(`Data for year ${year} could not be loaded.`);
-            return null; // Skip invalid year
-          }
-        })
+  const getData = (state, category, subcategory = "none") => {
+    const data = [];
+    if (category === "None") {
+      data.push(homelessnessData2023[state].years["2023"].overall.count);
+      data.push(homelessnessData2022[state].years["2022"].overall.count);
+      data.push(homelessnessData2021[state].years["2021"].overall.count);
+      data.push(homelessnessData2020[state].years["2020"].overall.count);
+      data.push(homelessnessData2019[state].years["2019"].overall.count);
+      data.push(homelessnessData2018[state].years["2018"].overall.count);
+      data.push(homelessnessData2017[state].years["2017"].overall.count);
+      data.push(homelessnessData2016[state].years["2016"].overall.count);
+      data.push(homelessnessData2015[state].years["2015"].overall.count);
+      data.push(homelessnessData2014[state].years["2014"].overall.count);
+      data.push(homelessnessData2013[state].years["2013"].overall.count);
+      data.push(homelessnessData2012[state].years["2012"].overall.count);
+      data.push(homelessnessData2011[state].years["2011"].overall.count);
+      data.push(homelessnessData2010[state].years["2010"].overall.count);
+      data.push(homelessnessData2009[state].years["2009"].overall.count);
+      data.push(homelessnessData2008[state].years["2008"].overall.count);
+      data.push(homelessnessData2007[state].years["2007"].overall.count);
+    } else {
+      data.push(
+        homelessnessData2023[state].years["2023"][category][subcategory].count
       );
-
-      const homelessnessData = {};
-
-      // Combine all years into a single dataset
-      allData
-        .filter((entry) => entry) // Exclude nulls
-        .forEach(({ year, data }) => {
-          Object.entries(data).forEach(([state, stateData]) => {
-            if (!homelessnessData[state]) {
-              homelessnessData[state] = [];
-            }
-            if (stateData.years[year]) {
-              homelessnessData[state].push({
-                year,
-                ...stateData.years[year],
-              });
-            }
-          });
-        });
-
-      const allStates = Object.keys(homelessnessData);
-      setStates(["All States", ...allStates]);
-
-      return homelessnessData;
-    } catch (error) {
-      console.error("Error loading data:", error);
-      setChartData({ error: "Failed to load data. Please try again later." });
+      data.push(
+        homelessnessData2022[state].years["2022"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2021[state].years["2021"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2020[state].years["2020"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2019[state].years["2019"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2018[state].years["2018"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2017[state].years["2017"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2016[state].years["2016"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2015[state].years["2015"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2014[state].years["2014"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2013[state].years["2013"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2012[state].years["2012"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2011[state].years["2011"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2010[state].years["2010"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2009[state].years["2009"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2008[state].years["2008"][category][subcategory].count
+      );
+      data.push(
+        homelessnessData2007[state].years["2007"][category][subcategory].count
+      );
+      return data;
     }
   };
 
-  useEffect(() => {
-    loadAllData().then((homelessnessData) => {
-      if (!homelessnessData) return;
-      console.log(homelessnessData);
-      // Filter data for selected state
-      const stateData =
-        selectedState === "All States"
-          ? Object.values(homelessnessData).flat()
-          : homelessnessData[selectedState] || [];
+  // Create the data object
+  const data = {
+    labels: [
+      "2007",
+      "2008",
+      "2009",
+      "2010",
+      "2011",
+      "2012",
+      "2013",
+      "2014",
+      "2015",
+      "2016",
+      "2017",
+      "2018",
+      "2019",
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+    ],
+    datasets: datasets,
+  };
 
-      const demographicKeys = demographicOptions[selectedDemographic].keys;
+  // Create the options object
+  const options = {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: "Homelessness Population (" + selectedState + ")",
+      },
+    },
+  };
 
-      // Prepare chart data
-      const datasets = demographicKeys.map((key) => {
-        const groupedData = stateData.reduce(
-          (acc, item) => {
-            if (item.year) {
-              acc.labels.push(item.year);
-              acc.data.push(item[key]?.count || 0); // Default to 0 for missing data
-            }
-            return acc;
-          },
-          { labels: [], data: [] }
-        );
+  const stateNames = Object.keys(homelessnessData2023);
+  stateNames.pop(); // remove the "total" key
+  stateNames.pop(); // remove the weird key
 
-        return {
-          label: key.replace(/_/g, " ").toUpperCase(),
-          data: groupedData.data,
-          borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`,
-          backgroundColor: `hsla(${Math.random() * 360}, 70%, 50%, 0.2)`,
-          tension: 0.4,
-        };
-      });
-
-      setChartData({
-        labels: [...new Set(stateData.map((item) => item.year))].sort(),
-        datasets,
-      });
-    });
-  }, [selectedState, selectedDemographic]);
+  // Add the "All States" option to the beginning of the array
+  stateNames.unshift("All States");
 
   return (
-    <div className="container my-5">
-      <div className="app-header text-center p-4 mb-4">
-        <h1 className="text-white">Homelessness Data Dashboard</h1>
-        <p className="text-light">
-          Explore trends in homelessness across states and demographic groups.
-        </p>
-      </div>
-
-      <div className="row my-4">
-        {/* State Selector */}
-        <div className="col-md-6">
-          <label htmlFor="stateSelect" className="form-label">
-            Select State:
-          </label>
-          <select
-            id="stateSelect"
-            className="form-select"
-            value={selectedState}
-            onChange={(e) => setSelectedState(e.target.value)}
-          >
-            {states
-              .filter(
-                (state) =>
-                  state !==
-                    "*File does not contain the imputed ages for people experiencing unsheltered homelessness over age 24 for the 22 CoCs that did not conduct an unsheltered count in 2023. Affected states and territories are: CA, GA, IL, MI, PR, and WA. " &&
-                  state !== "Total"
-              )
-              .map((state) => (
-                <option key={state} value={state}>
-                  {state}
-                </option>
-              ))}
-          </select>
-        </div>
-
-        {/* Demographic Selector */}
-        <div className="col-md-6">
-          <label htmlFor="demographicSelect" className="form-label">
-            Select Demographic:
-          </label>
-          <select
-            id="demographicSelect"
-            className="form-select"
-            value={selectedDemographic}
-            onChange={(e) => setSelectedDemographic(e.target.value)}
-          >
-            {Object.entries(demographicOptions).map(([key, value]) => (
-              <option key={key} value={key}>
-                {value.label}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      <div className="chart-container mt-4">
-        {/* Line Chart */}
-        {chartData.error ? (
-          <p className="text-center text-danger">{chartData.error}</p>
-        ) : chartData.labels ? (
-          <Line
-            data={chartData}
-            options={{
-              responsive: true,
-              plugins: {
-                legend: {
-                  position: "top",
-                },
-                title: {
-                  display: true,
-                  text: `Homelessness Trends (${demographicOptions[selectedDemographic].label}) in ${selectedState}*`,
-                },
-              },
-              scales: {
-                x: {
-                  title: {
-                    display: true,
-                    text: "Year",
-                  },
-                },
-                y: {
-                  title: {
-                    display: true,
-                    text: "Population",
-                  },
-                },
-              },
-            }}
-          />
-        ) : (
-          <p className="text-center">
-            No data available for the selected options.
-          </p>
-        )}
-      </div>
-      <div className="text-center mt-4 disclaimer">
-        <small>
-          *2021 data is impacted by the COVID-19 pandemic and may not be fully
-          representative.
-        </small>
-      </div>
+    <div>
+      <h1>React App</h1>
+      <h2>State</h2>
+      <select
+        onChange={(selection) => {
+          setSelectedState(selection.target.value);
+          console.log(selection.target.value);
+        }}
+      >
+        {stateNames.map((stateName) => (
+          <option key={stateName}>{stateName}</option>
+        ))}
+      </select>
+      <h2>Category</h2>
+      <select
+        onChange={(selection) => {
+          setSelectedCategory(selection.target.value);
+          console.log(selection.target.value);
+        }}
+      >
+        <option>None</option>
+        <option>Race/Ethnicity</option>
+        <option>Gender Identity</option>
+        <option>Age</option>
+      </select>
+      <Line data={data} options={options} />
     </div>
   );
-};
-
-export default App;
+}

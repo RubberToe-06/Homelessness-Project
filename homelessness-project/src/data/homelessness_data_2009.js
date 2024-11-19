@@ -1,4 +1,4 @@
-export const homelessnessData = {
+export const homelessnessData2009 = {
   AK: {
     years: {
       2009: {

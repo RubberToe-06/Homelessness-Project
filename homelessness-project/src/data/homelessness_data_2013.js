@@ -1,19 +1,19 @@
-export const homelessnessData = {
+export const homelessnessData2013 = {
   AK: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2128,
+          count: 1946,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 369,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 189,
           },
           from25to34: {
             label: "25-34",
@@ -85,19 +85,19 @@ export const homelessnessData = {
   },
   AL: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 5558,
+          count: 4689,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 694,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 506,
           },
           from25to34: {
             label: "25-34",
@@ -169,19 +169,19 @@ export const homelessnessData = {
   },
   AR: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 3424,
+          count: 3812,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 429,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 350,
           },
           from25to34: {
             label: "25-34",
@@ -253,7 +253,7 @@ export const homelessnessData = {
   },
   AS: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
           count: " ",
@@ -261,11 +261,11 @@ export const homelessnessData = {
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: " ",
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: " ",
           },
           from25to34: {
             label: "25-34",
@@ -337,19 +337,19 @@ export const homelessnessData = {
   },
   AZ: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 10504,
+          count: 10562,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2598,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 942,
           },
           from25to34: {
             label: "25-34",
@@ -421,19 +421,19 @@ export const homelessnessData = {
   },
   CA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 125128,
+          count: 118552,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 16097,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 14366,
           },
           from25to34: {
             label: "25-34",
@@ -505,19 +505,19 @@ export const homelessnessData = {
   },
   CO: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 15116,
+          count: 9754,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2710,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1066,
           },
           from25to34: {
             label: "25-34",
@@ -589,19 +589,19 @@ export const homelessnessData = {
   },
   CT: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 4456,
+          count: 4448,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 813,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 342,
           },
           from25to34: {
             label: "25-34",
@@ -673,19 +673,19 @@ export const homelessnessData = {
   },
   DC: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 6546,
+          count: 6865,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1874,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 604,
           },
           from25to34: {
             label: "25-34",
@@ -757,19 +757,19 @@ export const homelessnessData = {
   },
   DE: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1035,
+          count: 946,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 240,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 61,
           },
           from25to34: {
             label: "25-34",
@@ -841,19 +841,19 @@ export const homelessnessData = {
   },
   FL: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 56687,
+          count: 47862,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 10872,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 4115,
           },
           from25to34: {
             label: "25-34",
@@ -925,19 +925,19 @@ export const homelessnessData = {
   },
   GA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 20975,
+          count: 16971,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2633,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1401,
           },
           from25to34: {
             label: "25-34",
@@ -1009,19 +1009,19 @@ export const homelessnessData = {
   },
   GU: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1745,
+          count: 1271,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 515,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 147,
           },
           from25to34: {
             label: "25-34",
@@ -1093,19 +1093,19 @@ export const homelessnessData = {
   },
   HI: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 6188,
+          count: 6335,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1691,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 437,
           },
           from25to34: {
             label: "25-34",
@@ -1177,19 +1177,19 @@ export const homelessnessData = {
   },
   IA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 3134,
+          count: 3084,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1016,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 328,
           },
           from25to34: {
             label: "25-34",
@@ -1261,19 +1261,19 @@ export const homelessnessData = {
   },
   ID: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2199,
+          count: 1781,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 450,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 162,
           },
           from25to34: {
             label: "25-34",
@@ -1345,19 +1345,19 @@ export const homelessnessData = {
   },
   IL: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 14009,
+          count: 13425,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 3506,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1452,
           },
           from25to34: {
             label: "25-34",
@@ -1429,19 +1429,19 @@ export const homelessnessData = {
   },
   IN: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 6196,
+          count: 6096,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1543,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 449,
           },
           from25to34: {
             label: "25-34",
@@ -1513,19 +1513,19 @@ export const homelessnessData = {
   },
   KS: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2511,
+          count: 2693,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 739,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 197,
           },
           from25to34: {
             label: "25-34",
@@ -1597,19 +1597,19 @@ export const homelessnessData = {
   },
   KY: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 6034,
+          count: 5245,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1202,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 524,
           },
           from25to34: {
             label: "25-34",
@@ -1681,19 +1681,19 @@ export const homelessnessData = {
   },
   LA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 9291,
+          count: 5226,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 941,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 534,
           },
           from25to34: {
             label: "25-34",
@@ -1765,19 +1765,19 @@ export const homelessnessData = {
   },
   MA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 16664,
+          count: 19029,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 7259,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1953,
           },
           from25to34: {
             label: "25-34",
@@ -1849,19 +1849,19 @@ export const homelessnessData = {
   },
   MD: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 10208,
+          count: 8205,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1863,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 596,
           },
           from25to34: {
             label: "25-34",
@@ -1933,19 +1933,19 @@ export const homelessnessData = {
   },
   ME: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2447,
+          count: 3016,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 910,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 349,
           },
           from25to34: {
             label: "25-34",
@@ -2017,19 +2017,19 @@ export const homelessnessData = {
   },
   MI: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 13185,
+          count: 11527,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2861,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1295,
           },
           from25to34: {
             label: "25-34",
@@ -2101,19 +2101,19 @@ export const homelessnessData = {
   },
   MN: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 7495,
+          count: 8214,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2990,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 984,
           },
           from25to34: {
             label: "25-34",
@@ -2185,19 +2185,19 @@ export const homelessnessData = {
   },
   MO: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 8989,
+          count: 8581,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2462,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 864,
           },
           from25to34: {
             label: "25-34",
@@ -2269,7 +2269,7 @@ export const homelessnessData = {
   },
   MP: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
           count: " ",
@@ -2277,11 +2277,11 @@ export const homelessnessData = {
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: " ",
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: " ",
           },
           from25to34: {
             label: "25-34",
@@ -2353,19 +2353,19 @@ export const homelessnessData = {
   },
   MS: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2306,
+          count: 2403,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 428,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 329,
           },
           from25to34: {
             label: "25-34",
@@ -2437,19 +2437,19 @@ export const homelessnessData = {
   },
   MT: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1768,
+          count: 1878,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 385,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 213,
           },
           from25to34: {
             label: "25-34",
@@ -2521,19 +2521,19 @@ export const homelessnessData = {
   },
   NC: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 12896,
+          count: 12168,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 2911,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1219,
           },
           from25to34: {
             label: "25-34",
@@ -2605,19 +2605,19 @@ export const homelessnessData = {
   },
   ND: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 603,
+          count: 2069,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 507,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 266,
           },
           from25to34: {
             label: "25-34",
@@ -2689,19 +2689,19 @@ export const homelessnessData = {
   },
   NE: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 3548,
+          count: 3145,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 801,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 383,
           },
           from25to34: {
             label: "25-34",
@@ -2773,19 +2773,19 @@ export const homelessnessData = {
   },
   NH: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1469,
+          count: 1447,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 379,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 187,
           },
           from25to34: {
             label: "25-34",
@@ -2857,19 +2857,19 @@ export const homelessnessData = {
   },
   NJ: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 14137,
+          count: 12002,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 3944,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1174,
           },
           from25to34: {
             label: "25-34",
@@ -2941,19 +2941,19 @@ export const homelessnessData = {
   },
   NM: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 3601,
+          count: 2819,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 723,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 413,
           },
           from25to34: {
             label: "25-34",
@@ -3025,19 +3025,19 @@ export const homelessnessData = {
   },
   NV: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 9150,
+          count: 7039,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 959,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1101,
           },
           from25to34: {
             label: "25-34",
@@ -3109,19 +3109,19 @@ export const homelessnessData = {
   },
   NY: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 63445,
+          count: 77430,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 27251,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 8386,
           },
           from25to34: {
             label: "25-34",
@@ -3193,19 +3193,19 @@ export const homelessnessData = {
   },
   OH: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 13030,
+          count: 12325,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 3005,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1349,
           },
           from25to34: {
             label: "25-34",
@@ -3277,19 +3277,19 @@ export const homelessnessData = {
   },
   OK: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 4625,
+          count: 4408,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 880,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 449,
           },
           from25to34: {
             label: "25-34",
@@ -3361,19 +3361,19 @@ export const homelessnessData = {
   },
   OR: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 17254,
+          count: 13822,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 3123,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1368,
           },
           from25to34: {
             label: "25-34",
@@ -3445,19 +3445,19 @@ export const homelessnessData = {
   },
   PA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 15096,
+          count: 15086,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 4467,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1590,
           },
           from25to34: {
             label: "25-34",
@@ -3529,19 +3529,19 @@ export const homelessnessData = {
   },
   PR: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2900,
+          count: 4128,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 365,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 203,
           },
           from25to34: {
             label: "25-34",
@@ -3613,19 +3613,19 @@ export const homelessnessData = {
   },
   RI: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1070,
+          count: 1384,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 334,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 120,
           },
           from25to34: {
             label: "25-34",
@@ -3697,19 +3697,19 @@ export const homelessnessData = {
   },
   SC: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 5093,
+          count: 6544,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1139,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 436,
           },
           from25to34: {
             label: "25-34",
@@ -3781,19 +3781,19 @@ export const homelessnessData = {
   },
   SD: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 826,
+          count: 1094,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 400,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 95,
           },
           from25to34: {
             label: "25-34",
@@ -3865,19 +3865,19 @@ export const homelessnessData = {
   },
   TN: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 9113,
+          count: 9528,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1483,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 654,
           },
           from25to34: {
             label: "25-34",
@@ -3949,19 +3949,19 @@ export const homelessnessData = {
   },
   TX: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 36911,
+          count: 29615,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 5478,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 2056,
           },
           from25to34: {
             label: "25-34",
@@ -4033,19 +4033,19 @@ export const homelessnessData = {
   },
   UT: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 3130,
+          count: 3277,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 858,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 219,
           },
           from25to34: {
             label: "25-34",
@@ -4117,19 +4117,19 @@ export const homelessnessData = {
   },
   VA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 8816,
+          count: 7625,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1939,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 544,
           },
           from25to34: {
             label: "25-34",
@@ -4201,19 +4201,19 @@ export const homelessnessData = {
   },
   VI: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 532,
+          count: 482,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 24,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 24,
           },
           from25to34: {
             label: "25-34",
@@ -4285,19 +4285,19 @@ export const homelessnessData = {
   },
   VT: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1144,
+          count: 1454,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 430,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 176,
           },
           from25to34: {
             label: "25-34",
@@ -4369,19 +4369,19 @@ export const homelessnessData = {
   },
   WA: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 20439,
+          count: 17760,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 4039,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 1574,
           },
           from25to34: {
             label: "25-34",
@@ -4453,19 +4453,19 @@ export const homelessnessData = {
   },
   WI: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 5785,
+          count: 6104,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 1980,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 669,
           },
           from25to34: {
             label: "25-34",
@@ -4537,19 +4537,19 @@ export const homelessnessData = {
   },
   WV: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 2211,
+          count: 2240,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 414,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 290,
           },
           from25to34: {
             label: "25-34",
@@ -4621,19 +4621,19 @@ export const homelessnessData = {
   },
   WY: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 1038,
+          count: 953,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 223,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 98,
           },
           from25to34: {
             label: "25-34",
@@ -4705,19 +4705,19 @@ export const homelessnessData = {
   },
   Total: {
     years: {
-      2011: {
+      2013: {
         overall: {
           label: "Overall Homeless",
-          count: 623788,
+          count: 590364,
         },
         age: {
           under18: {
             label: "<18",
-            count: 0,
+            count: 138146,
           },
           "18-24": {
             label: "18-24",
-            count: 0,
+            count: 59798,
           },
           from25to34: {
             label: "25-34",

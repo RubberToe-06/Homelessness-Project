@@ -1,19 +1,19 @@
-export const homelessnessData = {
+export const homelessnessData2014 = {
   AK: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1940,
+          count: 1784,
         },
         age: {
           under18: {
             label: "<18",
-            count: 274,
+            count: 397,
           },
           "18-24": {
             label: "18-24",
-            count: 173,
+            count: 202,
           },
           from25to34: {
             label: "25-34",
@@ -35,209 +35,41 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 739,
+            count: 653,
           },
           black: {
             label: "Black, African American, or African",
-            count: 147,
+            count: 142,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 143,
+            count: 64,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 44,
+            count: 14,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 786,
+            count: 781,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 53,
+            count: 50,
           },
           other: {
             label: "Other",
-            count: 171,
+            count: 144,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 808,
+            count: 799,
           },
           male: {
             label: "Male",
-            count: 1127,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 5,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  AL: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 4111,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 681,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 304,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 1714,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 2251,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 84,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 4,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 49,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 8,
-          },
-          other: {
-            label: "Other",
-            count: 85,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 1733,
-          },
-          male: {
-            label: "Male",
-            count: 2366,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 12,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  AR: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 2463,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 432,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 197,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 1451,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 894,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 86,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 10,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 21,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 8,
-          },
-          other: {
-            label: "Other",
-            count: 79,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 1047,
-          },
-          male: {
-            label: "Male",
-            count: 1415,
+            count: 984,
           },
           transgender: {
             label: "Transgender",
@@ -251,9 +83,177 @@ export const homelessnessData = {
       },
     },
   },
+  AL: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 4561,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 772,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 366,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 1982,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 2345,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 123,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 17,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 20,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 2,
+          },
+          other: {
+            label: "Other",
+            count: 125,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 1681,
+          },
+          male: {
+            label: "Male",
+            count: 2806,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 4,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  AR: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 2936,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 355,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 315,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 1445,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 714,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 542,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 11,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 6,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 2,
+          },
+          other: {
+            label: "Other",
+            count: 33,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 1113,
+          },
+          male: {
+            label: "Male",
+            count: 1098,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 0,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
   AS: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
           count: " ",
@@ -337,19 +337,19 @@ export const homelessnessData = {
   },
   AZ: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 9707,
+          count: 10495,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2022,
+            count: 2679,
           },
           "18-24": {
             label: "18-24",
-            count: 733,
+            count: 1024,
           },
           from25to34: {
             label: "25-34",
@@ -371,23 +371,23 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 6562,
+            count: 6056,
           },
           black: {
             label: "Black, African American, or African",
-            count: 1792,
+            count: 1823,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 2365,
+            count: 2462,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 53,
+            count: 33,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 809,
+            count: 766,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
@@ -395,21 +395,21 @@ export const homelessnessData = {
           },
           other: {
             label: "Other",
-            count: 424,
+            count: 701,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3685,
+            count: 3900,
           },
           male: {
             label: "Male",
-            count: 6005,
+            count: 5531,
           },
           transgender: {
             label: "Transgender",
-            count: 17,
+            count: 15,
           },
           nonbinary: {
             label: "Non-binary",
@@ -421,19 +421,19 @@ export const homelessnessData = {
   },
   CA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 118142,
+          count: 113952,
         },
         age: {
           under18: {
             label: "<18",
-            count: 12828,
+            count: 15057,
           },
           "18-24": {
             label: "18-24",
-            count: 12160,
+            count: 13853,
           },
           from25to34: {
             label: "25-34",
@@ -455,45 +455,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 67669,
+            count: 31703,
           },
           black: {
             label: "Black, African American, or African",
-            count: 32434,
+            count: 13921,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 32705,
+            count: 16473,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 1836,
+            count: 1030,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 4179,
+            count: 1916,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 1284,
+            count: 758,
           },
           other: {
             label: "Other",
-            count: 10740,
+            count: 2695,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 39175,
+            count: 20974,
           },
           male: {
             label: "Male",
-            count: 78121,
+            count: 30954,
           },
           transgender: {
             label: "Transgender",
-            count: 846,
+            count: 95,
           },
           nonbinary: {
             label: "Non-binary",
@@ -505,19 +505,19 @@ export const homelessnessData = {
   },
   CO: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 10550,
+          count: 10028,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2327,
+            count: 2835,
           },
           "18-24": {
             label: "18-24",
-            count: 983,
+            count: 1004,
           },
           from25to34: {
             label: "25-34",
@@ -539,45 +539,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 7239,
+            count: 5330,
           },
           black: {
             label: "Black, African American, or African",
-            count: 1882,
+            count: 2060,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 2947,
+            count: 2604,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 78,
+            count: 91,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 527,
+            count: 474,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 61,
+            count: 64,
           },
           other: {
             label: "Other",
-            count: 763,
+            count: 1004,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 4103,
+            count: 3701,
           },
           male: {
             label: "Male",
-            count: 6393,
+            count: 5284,
           },
           transgender: {
             label: "Transgender",
-            count: 54,
+            count: 38,
           },
           nonbinary: {
             label: "Non-binary",
@@ -589,19 +589,19 @@ export const homelessnessData = {
   },
   CT: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 3902,
+          count: 4450,
         },
         age: {
           under18: {
             label: "<18",
-            count: 831,
+            count: 836,
           },
           "18-24": {
             label: "18-24",
-            count: 203,
+            count: 308,
           },
           from25to34: {
             label: "25-34",
@@ -623,45 +623,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2095,
+            count: 1680,
           },
           black: {
             label: "Black, African American, or African",
-            count: 1535,
+            count: 1505,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 1106,
+            count: 959,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 32,
+            count: 30,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 54,
+            count: 113,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 73,
+            count: 78,
           },
           other: {
             label: "Other",
-            count: 113,
+            count: 125,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1458,
+            count: 1404,
           },
           male: {
             label: "Male",
-            count: 2440,
+            count: 2125,
           },
           transgender: {
             label: "Transgender",
-            count: 4,
+            count: 2,
           },
           nonbinary: {
             label: "Non-binary",
@@ -673,19 +673,19 @@ export const homelessnessData = {
   },
   DC: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 8350,
+          count: 7748,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2732,
+            count: 2241,
           },
           "18-24": {
             label: "18-24",
-            count: 920,
+            count: 837,
           },
           from25to34: {
             label: "25-34",
@@ -707,45 +707,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 439,
+            count: 552,
           },
           black: {
             label: "Black, African American, or African",
-            count: 7689,
+            count: 6886,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 434,
+            count: 331,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 35,
+            count: 38,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 38,
+            count: 13,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 16,
+            count: 2,
           },
           other: {
             label: "Other",
-            count: 133,
+            count: 257,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3802,
+            count: 3326,
           },
           male: {
             label: "Male",
-            count: 4512,
+            count: 4406,
           },
           transgender: {
             label: "Transgender",
-            count: 36,
+            count: 16,
           },
           nonbinary: {
             label: "Non-binary",
@@ -757,19 +757,19 @@ export const homelessnessData = {
   },
   DE: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1070,
+          count: 901,
         },
         age: {
           under18: {
             label: "<18",
-            count: 196,
+            count: 220,
           },
           "18-24": {
             label: "18-24",
-            count: 69,
+            count: 51,
           },
           from25to34: {
             label: "25-34",
@@ -791,45 +791,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 406,
+            count: 358,
           },
           black: {
             label: "Black, African American, or African",
-            count: 617,
+            count: 519,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 59,
+            count: 58,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 1,
+            count: 2,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 1,
+            count: 5,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 3,
+            count: 2,
           },
           other: {
             label: "Other",
-            count: 42,
+            count: 15,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 411,
+            count: 390,
           },
           male: {
             label: "Male",
-            count: 658,
+            count: 511,
           },
           transgender: {
             label: "Transgender",
-            count: 1,
+            count: 0,
           },
           nonbinary: {
             label: "Non-binary",
@@ -841,19 +841,19 @@ export const homelessnessData = {
   },
   FL: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 33559,
+          count: 41542,
         },
         age: {
           under18: {
             label: "<18",
-            count: 6140,
+            count: 8579,
           },
           "18-24": {
             label: "18-24",
-            count: 2238,
+            count: 3522,
           },
           from25to34: {
             label: "25-34",
@@ -875,45 +875,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 19369,
+            count: 20106,
           },
           black: {
             label: "Black, African American, or African",
-            count: 12594,
+            count: 12743,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 4704,
+            count: 4209,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 116,
+            count: 130,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 294,
+            count: 270,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 73,
+            count: 80,
           },
           other: {
             label: "Other",
-            count: 1113,
+            count: 727,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 11789,
+            count: 11959,
           },
           male: {
             label: "Male",
-            count: 21740,
+            count: 22057,
           },
           transgender: {
             label: "Transgender",
-            count: 30,
+            count: 40,
           },
           nonbinary: {
             label: "Non-binary",
@@ -925,19 +925,19 @@ export const homelessnessData = {
   },
   GA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 12909,
+          count: 16521,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2237,
+            count: 2716,
           },
           "18-24": {
             label: "18-24",
-            count: 907,
+            count: 1246,
           },
           from25to34: {
             label: "25-34",
@@ -959,45 +959,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 3822,
+            count: 2371,
           },
           black: {
             label: "Black, African American, or African",
-            count: 8571,
+            count: 8126,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 643,
+            count: 444,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 54,
+            count: 34,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 64,
+            count: 7,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 51,
+            count: 10,
           },
           other: {
             label: "Other",
-            count: 347,
+            count: 366,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 4507,
+            count: 3920,
           },
           male: {
             label: "Male",
-            count: 8376,
+            count: 6967,
           },
           transgender: {
             label: "Transgender",
-            count: 26,
+            count: 27,
           },
           nonbinary: {
             label: "Non-binary",
@@ -1009,19 +1009,19 @@ export const homelessnessData = {
   },
   GU: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1085,
+          count: 1356,
         },
         age: {
           under18: {
             label: "<18",
-            count: 470,
+            count: 535,
           },
           "18-24": {
             label: "18-24",
-            count: 103,
+            count: 149,
           },
           from25to34: {
             label: "25-34",
@@ -1047,37 +1047,37 @@ export const homelessnessData = {
           },
           black: {
             label: "Black, African American, or African",
-            count: 4,
+            count: 5,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 24,
+            count: 11,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 17,
+            count: 25,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 0,
+            count: 7,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 1033,
+            count: 1277,
           },
           other: {
             label: "Other",
-            count: 20,
+            count: 31,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 529,
+            count: 658,
           },
           male: {
             label: "Male",
-            count: 555,
+            count: 697,
           },
           transgender: {
             label: "Transgender",
@@ -1093,19 +1093,19 @@ export const homelessnessData = {
   },
   HI: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 7921,
+          count: 6918,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1941,
+            count: 1864,
           },
           "18-24": {
             label: "18-24",
-            count: 531,
+            count: 507,
           },
           from25to34: {
             label: "25-34",
@@ -1127,45 +1127,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1820,
+            count: 1683,
           },
           black: {
             label: "Black, African American, or African",
-            count: 269,
+            count: 227,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 932,
+            count: 862,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 396,
+            count: 394,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 114,
+            count: 87,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 3374,
+            count: 2603,
           },
           other: {
             label: "Other",
-            count: 1948,
+            count: 1924,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3243,
+            count: 2896,
           },
           male: {
             label: "Male",
-            count: 4641,
+            count: 3998,
           },
           transgender: {
             label: "Transgender",
-            count: 37,
+            count: 24,
           },
           nonbinary: {
             label: "Non-binary",
@@ -1177,19 +1177,19 @@ export const homelessnessData = {
   },
   IA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 3064,
+          count: 3122,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1013,
+            count: 1030,
           },
           "18-24": {
             label: "18-24",
-            count: 285,
+            count: 311,
           },
           from25to34: {
             label: "25-34",
@@ -1211,377 +1211,41 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1869,
+            count: 1972,
           },
           black: {
             label: "Black, African American, or African",
-            count: 898,
+            count: 818,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 298,
+            count: 267,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 18,
+            count: 19,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 73,
+            count: 84,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 5,
+            count: 4,
           },
           other: {
             label: "Other",
-            count: 201,
+            count: 225,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1403,
+            count: 1431,
           },
           male: {
             label: "Male",
-            count: 1659,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 2,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  ID: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 2247,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 578,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 195,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 1928,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 76,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 271,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 9,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 133,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 23,
-          },
-          other: {
-            label: "Other",
-            count: 78,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 966,
-          },
-          male: {
-            label: "Male",
-            count: 1278,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 3,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  IL: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 11590,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 2892,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 1130,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 4214,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 6858,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 1249,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 123,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 54,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 18,
-          },
-          other: {
-            label: "Other",
-            count: 323,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 4746,
-          },
-          male: {
-            label: "Male",
-            count: 6813,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 31,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  IN: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 5798,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 1319,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 448,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 3587,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 1911,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 221,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 24,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 41,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 17,
-          },
-          other: {
-            label: "Other",
-            count: 218,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 2414,
-          },
-          male: {
-            label: "Male",
-            count: 3375,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 9,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  KS: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 2255,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 639,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 115,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 1505,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 513,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 236,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 18,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 65,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 2,
-          },
-          other: {
-            label: "Other",
-            count: 152,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 992,
-          },
-          male: {
-            label: "Male",
-            count: 1262,
+            count: 1690,
           },
           transgender: {
             label: "Transgender",
@@ -1595,21 +1259,21 @@ export const homelessnessData = {
       },
     },
   },
-  KY: {
+  ID: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 4237,
+          count: 2104,
         },
         age: {
           under18: {
             label: "<18",
-            count: 787,
+            count: 518,
           },
           "18-24": {
             label: "18-24",
-            count: 330,
+            count: 186,
           },
           from25to34: {
             label: "25-34",
@@ -1631,45 +1295,381 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2895,
+            count: 1830,
           },
           black: {
             label: "Black, African American, or African",
-            count: 1103,
+            count: 88,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 169,
+            count: 215,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 3,
+            count: 16,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 30,
+            count: 136,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 18,
+            count: 11,
           },
           other: {
             label: "Other",
-            count: 188,
+            count: 23,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1575,
+            count: 894,
           },
           male: {
             label: "Male",
-            count: 2656,
+            count: 1209,
           },
           transgender: {
             label: "Transgender",
-            count: 6,
+            count: 1,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  IL: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 13107,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 3592,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 1450,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 4473,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 7582,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 1297,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 114,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 64,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 37,
+          },
+          other: {
+            label: "Other",
+            count: 453,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 6111,
+          },
+          male: {
+            label: "Male",
+            count: 6591,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 21,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  IN: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 5971,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 1277,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 546,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 3696,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 2007,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 291,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 25,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 32,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 7,
+          },
+          other: {
+            label: "Other",
+            count: 204,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 2290,
+          },
+          male: {
+            label: "Male",
+            count: 3678,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 3,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  KS: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 2783,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 707,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 192,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 1855,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 622,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 260,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 15,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 90,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 2,
+          },
+          other: {
+            label: "Other",
+            count: 117,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 1150,
+          },
+          male: {
+            label: "Male",
+            count: 1548,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 3,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  KY: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 5089,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 1073,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 484,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 3351,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 1371,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 177,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 13,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 32,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 3,
+          },
+          other: {
+            label: "Other",
+            count: 228,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 1998,
+          },
+          male: {
+            label: "Male",
+            count: 2997,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 3,
           },
           nonbinary: {
             label: "Non-binary",
@@ -1681,19 +1681,19 @@ export const homelessnessData = {
   },
   LA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 3994,
+          count: 4606,
         },
         age: {
           under18: {
             label: "<18",
-            count: 608,
+            count: 860,
           },
           "18-24": {
             label: "18-24",
-            count: 405,
+            count: 470,
           },
           from25to34: {
             label: "25-34",
@@ -1715,45 +1715,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1482,
+            count: 1515,
           },
           black: {
             label: "Black, African American, or African",
-            count: 2319,
+            count: 2871,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 181,
+            count: 136,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 12,
+            count: 23,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 30,
+            count: 58,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 10,
+            count: 11,
           },
           other: {
             label: "Other",
-            count: 141,
+            count: 128,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1337,
+            count: 1746,
           },
           male: {
             label: "Male",
-            count: 2648,
+            count: 2844,
           },
           transgender: {
             label: "Transgender",
-            count: 9,
+            count: 16,
           },
           nonbinary: {
             label: "Non-binary",
@@ -1765,19 +1765,19 @@ export const homelessnessData = {
   },
   MA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 19608,
+          count: 21237,
         },
         age: {
           under18: {
             label: "<18",
-            count: 7764,
+            count: 8916,
           },
           "18-24": {
             label: "18-24",
-            count: 1492,
+            count: 1975,
           },
           from25to34: {
             label: "25-34",
@@ -1799,45 +1799,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 11029,
+            count: 10415,
           },
           black: {
             label: "Black, African American, or African",
-            count: 6154,
+            count: 6164,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 6948,
+            count: 7227,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 129,
+            count: 209,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 80,
+            count: 58,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 83,
+            count: 100,
           },
           other: {
             label: "Other",
-            count: 2133,
+            count: 4266,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 9446,
+            count: 10751,
           },
           male: {
             label: "Male",
-            count: 10145,
+            count: 10451,
           },
           transgender: {
             label: "Transgender",
-            count: 17,
+            count: 10,
           },
           nonbinary: {
             label: "Non-binary",
@@ -1849,19 +1849,19 @@ export const homelessnessData = {
   },
   MD: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 7689,
+          count: 7856,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1705,
+            count: 1812,
           },
           "18-24": {
             label: "18-24",
-            count: 463,
+            count: 592,
           },
           from25to34: {
             label: "25-34",
@@ -1883,23 +1883,23 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2688,
+            count: 2696,
           },
           black: {
             label: "Black, African American, or African",
-            count: 4620,
+            count: 4516,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 719,
+            count: 368,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 34,
+            count: 49,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 55,
+            count: 32,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
@@ -1907,17 +1907,17 @@ export const homelessnessData = {
           },
           other: {
             label: "Other",
-            count: 273,
+            count: 208,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 2922,
+            count: 2988,
           },
           male: {
             label: "Male",
-            count: 4760,
+            count: 4525,
           },
           transgender: {
             label: "Transgender",
@@ -1933,19 +1933,19 @@ export const homelessnessData = {
   },
   ME: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 2241,
+          count: 2726,
         },
         age: {
           under18: {
             label: "<18",
-            count: 580,
+            count: 793,
           },
           "18-24": {
             label: "18-24",
-            count: 201,
+            count: 315,
           },
           from25to34: {
             label: "25-34",
@@ -1967,45 +1967,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1872,
+            count: 2371,
           },
           black: {
             label: "Black, African American, or African",
-            count: 237,
+            count: 236,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 70,
+            count: 133,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 9,
+            count: 11,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 42,
+            count: 34,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 5,
+            count: 12,
           },
           other: {
             label: "Other",
-            count: 76,
+            count: 62,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1007,
+            count: 1235,
           },
           male: {
             label: "Male",
-            count: 1231,
+            count: 1489,
           },
           transgender: {
             label: "Transgender",
-            count: 3,
+            count: 2,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2017,19 +2017,19 @@ export const homelessnessData = {
   },
   MI: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 9316,
+          count: 12227,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2381,
+            count: 3145,
           },
           "18-24": {
             label: "18-24",
-            count: 956,
+            count: 1396,
           },
           from25to34: {
             label: "25-34",
@@ -2051,45 +2051,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 4112,
+            count: 4708,
           },
           black: {
             label: "Black, African American, or African",
-            count: 4637,
+            count: 5301,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 524,
+            count: 639,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 31,
+            count: 37,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 89,
+            count: 99,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 33,
+            count: 11,
           },
           other: {
             label: "Other",
-            count: 414,
+            count: 605,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3854,
+            count: 4599,
           },
           male: {
             label: "Male",
-            count: 5446,
+            count: 6162,
           },
           transgender: {
             label: "Transgender",
-            count: 16,
+            count: 0,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2101,19 +2101,19 @@ export const homelessnessData = {
   },
   MN: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 7341,
+          count: 8377,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2563,
+            count: 3034,
           },
           "18-24": {
             label: "18-24",
-            count: 934,
+            count: 983,
           },
           from25to34: {
             label: "25-34",
@@ -2135,45 +2135,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2780,
+            count: 2966,
           },
           black: {
             label: "Black, African American, or African",
-            count: 3306,
+            count: 3917,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 678,
+            count: 580,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 82,
+            count: 153,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 709,
+            count: 714,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 72,
+            count: 38,
           },
           other: {
             label: "Other",
-            count: 392,
+            count: 589,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3481,
+            count: 3956,
           },
           male: {
             label: "Male",
-            count: 3841,
+            count: 4410,
           },
           transgender: {
             label: "Transgender",
-            count: 19,
+            count: 11,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2185,19 +2185,19 @@ export const homelessnessData = {
   },
   MO: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 6194,
+          count: 7282,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1676,
+            count: 1910,
           },
           "18-24": {
             label: "18-24",
-            count: 614,
+            count: 594,
           },
           from25to34: {
             label: "25-34",
@@ -2219,15 +2219,15 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 3457,
+            count: 3896,
           },
           black: {
             label: "Black, African American, or African",
-            count: 2312,
+            count: 2888,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 262,
+            count: 304,
           },
           asian: {
             label: "Asian, or Asian American",
@@ -2235,29 +2235,29 @@ export const homelessnessData = {
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 108,
+            count: 42,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 18,
+            count: 16,
           },
           other: {
             label: "Other",
-            count: 276,
+            count: 321,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 2864,
+            count: 3226,
           },
           male: {
             label: "Male",
-            count: 3324,
+            count: 3949,
           },
           transgender: {
             label: "Transgender",
-            count: 6,
+            count: 11,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2269,7 +2269,7 @@ export const homelessnessData = {
   },
   MP: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
           count: " ",
@@ -2353,19 +2353,19 @@ export const homelessnessData = {
   },
   MS: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1738,
+          count: 2226,
         },
         age: {
           under18: {
             label: "<18",
-            count: 266,
+            count: 355,
           },
           "18-24": {
             label: "18-24",
-            count: 114,
+            count: 184,
           },
           from25to34: {
             label: "25-34",
@@ -2387,45 +2387,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 647,
+            count: 840,
           },
           black: {
             label: "Black, African American, or African",
-            count: 1054,
+            count: 1323,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 20,
+            count: 46,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 7,
+            count: 12,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 22,
+            count: 19,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 3,
+            count: 4,
           },
           other: {
             label: "Other",
-            count: 5,
+            count: 28,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 712,
+            count: 782,
           },
           male: {
             label: "Male",
-            count: 1014,
+            count: 1437,
           },
           transgender: {
             label: "Transgender",
-            count: 12,
+            count: 7,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2437,19 +2437,19 @@ export const homelessnessData = {
   },
   MT: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1418,
+          count: 1745,
         },
         age: {
           under18: {
             label: "<18",
-            count: 350,
+            count: 354,
           },
           "18-24": {
             label: "18-24",
-            count: 123,
+            count: 232,
           },
           from25to34: {
             label: "25-34",
@@ -2471,45 +2471,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 877,
+            count: 1379,
           },
           black: {
             label: "Black, African American, or African",
-            count: 25,
+            count: 22,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 112,
+            count: 69,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 1,
+            count: 3,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 366,
+            count: 327,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 6,
+            count: 14,
           },
           other: {
             label: "Other",
-            count: 143,
+            count: 0,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 599,
+            count: 824,
           },
           male: {
             label: "Male",
-            count: 818,
+            count: 921,
           },
           transgender: {
             label: "Transgender",
-            count: 1,
+            count: 0,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2521,19 +2521,19 @@ export const homelessnessData = {
   },
   NC: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 9559,
+          count: 11491,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1994,
+            count: 2548,
           },
           "18-24": {
             label: "18-24",
-            count: 650,
+            count: 1028,
           },
           from25to34: {
             label: "25-34",
@@ -2555,209 +2555,41 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 3974,
+            count: 4727,
           },
           black: {
             label: "Black, African American, or African",
-            count: 5072,
+            count: 6240,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 432,
+            count: 436,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 31,
+            count: 43,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 145,
+            count: 89,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 15,
+            count: 23,
           },
           other: {
             label: "Other",
-            count: 322,
+            count: 316,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3774,
+            count: 4520,
           },
           male: {
             label: "Male",
-            count: 5773,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 12,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  ND: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 923,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 154,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 86,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 510,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 129,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 79,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 5,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 218,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 1,
-          },
-          other: {
-            label: "Other",
-            count: 60,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 331,
-          },
-          male: {
-            label: "Male",
-            count: 590,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 2,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  NE: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 2754,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 590,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 258,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 1858,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 570,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 362,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 11,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 67,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 6,
-          },
-          other: {
-            label: "Other",
-            count: 242,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 980,
-          },
-          male: {
-            label: "Male",
-            count: 1771,
+            count: 6915,
           },
           transgender: {
             label: "Transgender",
@@ -2771,17 +2603,185 @@ export const homelessnessData = {
       },
     },
   },
-  NH: {
+  ND: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1366,
+          count: 1258,
         },
         age: {
           under18: {
             label: "<18",
-            count: 321,
+            count: 217,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 129,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 715,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 230,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 133,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 7,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 213,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 1,
+          },
+          other: {
+            label: "Other",
+            count: 92,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 428,
+          },
+          male: {
+            label: "Male",
+            count: 830,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 0,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  NE: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 3026,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 765,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 311,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 2069,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 648,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 376,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 14,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 112,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 12,
+          },
+          other: {
+            label: "Other",
+            count: 171,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 1181,
+          },
+          male: {
+            label: "Male",
+            count: 1845,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 0,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  NH: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 1376,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 329,
           },
           "18-24": {
             label: "18-24",
@@ -2807,45 +2807,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1183,
+            count: 1242,
           },
           black: {
             label: "Black, African American, or African",
-            count: 94,
+            count: 58,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 119,
+            count: 82,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 2,
+            count: 4,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 3,
+            count: 9,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 2,
+            count: 0,
           },
           other: {
             label: "Other",
-            count: 82,
+            count: 51,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 601,
+            count: 560,
           },
           male: {
             label: "Male",
-            count: 762,
+            count: 803,
           },
           transgender: {
             label: "Transgender",
-            count: 3,
+            count: 1,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2857,19 +2857,19 @@ export const homelessnessData = {
   },
   NJ: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 8895,
+          count: 11671,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2086,
+            count: 3287,
           },
           "18-24": {
             label: "18-24",
-            count: 850,
+            count: 1198,
           },
           from25to34: {
             label: "25-34",
@@ -2891,45 +2891,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 3835,
+            count: 5051,
           },
           black: {
             label: "Black, African American, or African",
-            count: 4682,
+            count: 6037,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 1796,
+            count: 2403,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 56,
+            count: 76,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 79,
+            count: 86,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 53,
+            count: 43,
           },
           other: {
             label: "Other",
-            count: 190,
+            count: 374,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3738,
+            count: 5185,
           },
           male: {
             label: "Male",
-            count: 5148,
+            count: 6480,
           },
           transgender: {
             label: "Transgender",
-            count: 9,
+            count: 2,
           },
           nonbinary: {
             label: "Non-binary",
@@ -2941,19 +2941,19 @@ export const homelessnessData = {
   },
   NM: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 2263,
+          count: 2746,
         },
         age: {
           under18: {
             label: "<18",
-            count: 529,
+            count: 750,
           },
           "18-24": {
             label: "18-24",
-            count: 210,
+            count: 243,
           },
           from25to34: {
             label: "25-34",
@@ -2975,45 +2975,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1273,
+            count: 1378,
           },
           black: {
             label: "Black, African American, or African",
-            count: 181,
+            count: 200,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 877,
+            count: 1012,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 18,
+            count: 15,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 576,
+            count: 536,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 16,
+            count: 17,
           },
           other: {
             label: "Other",
-            count: 199,
+            count: 172,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 848,
+            count: 897,
           },
           male: {
             label: "Male",
-            count: 1404,
+            count: 1421,
           },
           transgender: {
             label: "Transgender",
-            count: 11,
+            count: 0,
           },
           nonbinary: {
             label: "Non-binary",
@@ -3025,19 +3025,19 @@ export const homelessnessData = {
   },
   NV: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 7398,
+          count: 8582,
         },
         age: {
           under18: {
             label: "<18",
-            count: 639,
+            count: 1542,
           },
           "18-24": {
             label: "18-24",
-            count: 1424,
+            count: 1206,
           },
           from25to34: {
             label: "25-34",
@@ -3059,45 +3059,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 4329,
+            count: 4183,
           },
           black: {
             label: "Black, African American, or African",
-            count: 2196,
+            count: 2980,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 950,
+            count: 1738,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 189,
+            count: 139,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 167,
+            count: 141,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 132,
+            count: 92,
           },
           other: {
             label: "Other",
-            count: 385,
+            count: 1047,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1851,
+            count: 2854,
           },
           male: {
             label: "Male",
-            count: 5541,
+            count: 5692,
           },
           transgender: {
             label: "Transgender",
-            count: 6,
+            count: 36,
           },
           nonbinary: {
             label: "Non-binary",
@@ -3109,19 +3109,19 @@ export const homelessnessData = {
   },
   NY: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 86352,
+          count: 80590,
         },
         age: {
           under18: {
             label: "<18",
-            count: 30122,
+            count: 28588,
           },
           "18-24": {
             label: "18-24",
-            count: 8816,
+            count: 8608,
           },
           from25to34: {
             label: "25-34",
@@ -3143,45 +3143,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 19365,
+            count: 19012,
           },
           black: {
             label: "Black, African American, or African",
-            count: 55779,
+            count: 58453,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 39128,
+            count: 26005,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 945,
+            count: 823,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 659,
+            count: 768,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 1208,
+            count: 656,
           },
           other: {
             label: "Other",
-            count: 8396,
+            count: 859,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 41147,
+            count: 38134,
           },
           male: {
             label: "Male",
-            count: 44980,
+            count: 42329,
           },
           transgender: {
             label: "Transgender",
-            count: 225,
+            count: 108,
           },
           nonbinary: {
             label: "Non-binary",
@@ -3193,19 +3193,19 @@ export const homelessnessData = {
   },
   OH: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 10404,
+          count: 11823,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2229,
+            count: 2599,
           },
           "18-24": {
             label: "18-24",
-            count: 944,
+            count: 1236,
           },
           from25to34: {
             label: "25-34",
@@ -3227,45 +3227,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 5176,
+            count: 5994,
           },
           black: {
             label: "Black, African American, or African",
-            count: 4632,
+            count: 4979,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 333,
+            count: 502,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 38,
+            count: 16,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 50,
+            count: 54,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 9,
+            count: 19,
           },
           other: {
             label: "Other",
-            count: 499,
+            count: 584,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 4046,
+            count: 4497,
           },
           male: {
             label: "Male",
-            count: 6337,
+            count: 7140,
           },
           transgender: {
             label: "Transgender",
-            count: 21,
+            count: 9,
           },
           nonbinary: {
             label: "Non-binary",
@@ -3277,19 +3277,19 @@ export const homelessnessData = {
   },
   OK: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 4107,
+          count: 4191,
         },
         age: {
           under18: {
             label: "<18",
-            count: 764,
+            count: 749,
           },
           "18-24": {
             label: "18-24",
-            count: 427,
+            count: 420,
           },
           from25to34: {
             label: "25-34",
@@ -3311,37 +3311,37 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2504,
+            count: 2653,
           },
           black: {
             label: "Black, African American, or African",
-            count: 880,
+            count: 840,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 214,
+            count: 143,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 25,
+            count: 14,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 539,
+            count: 503,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 7,
+            count: 10,
           },
           other: {
             label: "Other",
-            count: 152,
+            count: 171,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1615,
+            count: 1699,
           },
           male: {
             label: "Male",
@@ -3361,19 +3361,19 @@ export const homelessnessData = {
   },
   OR: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 13238,
+          count: 12164,
         },
         age: {
           under18: {
             label: "<18",
-            count: 2566,
+            count: 2685,
           },
           "18-24": {
             label: "18-24",
-            count: 1188,
+            count: 1174,
           },
           from25to34: {
             label: "25-34",
@@ -3395,99 +3395,15 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 10733,
+            count: 6523,
           },
           black: {
             label: "Black, African American, or African",
-            count: 839,
+            count: 564,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 1418,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 85,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 559,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 146,
-          },
-          other: {
-            label: "Other",
-            count: 876,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 5286,
-          },
-          male: {
-            label: "Male",
-            count: 7893,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 59,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  PA: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 15339,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 4342,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 1488,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 6647,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 7899,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 1677,
+            count: 1510,
           },
           asian: {
             label: "Asian, or Asian American",
@@ -3495,109 +3411,25 @@ export const homelessnessData = {
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 61,
+            count: 346,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 27,
+            count: 173,
           },
           other: {
             label: "Other",
-            count: 642,
+            count: 775,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 6593,
+            count: 3739,
           },
           male: {
             label: "Male",
-            count: 8708,
-          },
-          transgender: {
-            label: "Transgender",
-            count: 38,
-          },
-          nonbinary: {
-            label: "Non-binary",
-            count: 0,
-          },
-        },
-      },
-    },
-  },
-  PR: {
-    years: {
-      2016: {
-        overall: {
-          label: "Overall Homeless",
-          count: 4418,
-        },
-        age: {
-          under18: {
-            label: "<18",
-            count: 377,
-          },
-          "18-24": {
-            label: "18-24",
-            count: 228,
-          },
-          from25to34: {
-            label: "25-34",
-            count: 0,
-          },
-          from35to54: {
-            label: "35-54",
-            count: 0,
-          },
-          from55to64: {
-            label: "55-64",
-            count: 0,
-          },
-          over64: {
-            label: ">64",
-            count: 0,
-          },
-        },
-        race: {
-          white: {
-            label: "White, or Caucasian",
-            count: 1909,
-          },
-          black: {
-            label: "Black, African American, or African",
-            count: 738,
-          },
-          hispanic: {
-            label: "Hispanic, or Latin(o)(a)(x)",
-            count: 4300,
-          },
-          asian: {
-            label: "Asian, or Asian American",
-            count: 4,
-          },
-          native: {
-            label: "American Indian, Alaska Native, or Indigenous",
-            count: 51,
-          },
-          pacific: {
-            label: "Native Hawaiian or Other Pacific Islander",
-            count: 14,
-          },
-          other: {
-            label: "Other",
-            count: 1702,
-          },
-        },
-        sexualOrientation: {
-          female: {
-            label: "Female",
-            count: 1227,
-          },
-          male: {
-            label: "Male",
-            count: 3178,
+            count: 4692,
           },
           transgender: {
             label: "Transgender",
@@ -3611,21 +3443,21 @@ export const homelessnessData = {
       },
     },
   },
-  RI: {
+  PA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1160,
+          count: 15333,
         },
         age: {
           under18: {
             label: "<18",
-            count: 195,
+            count: 4287,
           },
           "18-24": {
             label: "18-24",
-            count: 89,
+            count: 1775,
           },
           from25to34: {
             label: "25-34",
@@ -3647,41 +3479,209 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 767,
+            count: 6215,
           },
           black: {
             label: "Black, African American, or African",
-            count: 291,
+            count: 8034,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 236,
+            count: 1589,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 15,
+            count: 58,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 17,
+            count: 82,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 3,
+            count: 17,
           },
           other: {
             label: "Other",
-            count: 67,
+            count: 892,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 421,
+            count: 6614,
           },
           male: {
             label: "Male",
-            count: 738,
+            count: 8595,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 89,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  PR: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 4132,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 398,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 209,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 599,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 133,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 1380,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 0,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 14,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 24,
+          },
+          other: {
+            label: "Other",
+            count: 636,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 457,
+          },
+          male: {
+            label: "Male",
+            count: 945,
+          },
+          transgender: {
+            label: "Transgender",
+            count: 4,
+          },
+          nonbinary: {
+            label: "Non-binary",
+            count: 0,
+          },
+        },
+      },
+    },
+  },
+  RI: {
+    years: {
+      2014: {
+        overall: {
+          label: "Overall Homeless",
+          count: 1190,
+        },
+        age: {
+          under18: {
+            label: "<18",
+            count: 251,
+          },
+          "18-24": {
+            label: "18-24",
+            count: 99,
+          },
+          from25to34: {
+            label: "25-34",
+            count: 0,
+          },
+          from35to54: {
+            label: "35-54",
+            count: 0,
+          },
+          from55to64: {
+            label: "55-64",
+            count: 0,
+          },
+          over64: {
+            label: ">64",
+            count: 0,
+          },
+        },
+        race: {
+          white: {
+            label: "White, or Caucasian",
+            count: 786,
+          },
+          black: {
+            label: "Black, African American, or African",
+            count: 280,
+          },
+          hispanic: {
+            label: "Hispanic, or Latin(o)(a)(x)",
+            count: 258,
+          },
+          asian: {
+            label: "Asian, or Asian American",
+            count: 6,
+          },
+          native: {
+            label: "American Indian, Alaska Native, or Indigenous",
+            count: 11,
+          },
+          pacific: {
+            label: "Native Hawaiian or Other Pacific Islander",
+            count: 6,
+          },
+          other: {
+            label: "Other",
+            count: 101,
+          },
+        },
+        sexualOrientation: {
+          female: {
+            label: "Female",
+            count: 462,
+          },
+          male: {
+            label: "Male",
+            count: 727,
           },
           transgender: {
             label: "Transgender",
@@ -3697,19 +3697,19 @@ export const homelessnessData = {
   },
   SC: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 5051,
+          count: 5057,
         },
         age: {
           under18: {
             label: "<18",
-            count: 820,
+            count: 858,
           },
           "18-24": {
             label: "18-24",
-            count: 325,
+            count: 366,
           },
           from25to34: {
             label: "25-34",
@@ -3731,45 +3731,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2159,
+            count: 2111,
           },
           black: {
             label: "Black, African American, or African",
-            count: 2626,
+            count: 2611,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 127,
+            count: 186,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 21,
+            count: 10,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 28,
+            count: 57,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 17,
+            count: 6,
           },
           other: {
             label: "Other",
-            count: 200,
+            count: 262,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1791,
+            count: 2249,
           },
           male: {
             label: "Male",
-            count: 3257,
+            count: 2787,
           },
           transgender: {
             label: "Transgender",
-            count: 3,
+            count: 21,
           },
           nonbinary: {
             label: "Non-binary",
@@ -3781,19 +3781,19 @@ export const homelessnessData = {
   },
   SD: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1072,
+          count: 885,
         },
         age: {
           under18: {
             label: "<18",
-            count: 329,
+            count: 247,
           },
           "18-24": {
             label: "18-24",
-            count: 128,
+            count: 79,
           },
           from25to34: {
             label: "25-34",
@@ -3815,15 +3815,15 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 322,
+            count: 409,
           },
           black: {
             label: "Black, African American, or African",
-            count: 72,
+            count: 63,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 46,
+            count: 55,
           },
           asian: {
             label: "Asian, or Asian American",
@@ -3831,25 +3831,25 @@ export const homelessnessData = {
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 624,
+            count: 410,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 5,
+            count: 0,
           },
           other: {
             label: "Other",
-            count: 47,
+            count: 1,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 456,
+            count: 361,
           },
           male: {
             label: "Male",
-            count: 616,
+            count: 524,
           },
           transgender: {
             label: "Transgender",
@@ -3865,19 +3865,19 @@ export const homelessnessData = {
   },
   TN: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 8779,
+          count: 9415,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1298,
+            count: 1390,
           },
           "18-24": {
             label: "18-24",
-            count: 543,
+            count: 738,
           },
           from25to34: {
             label: "25-34",
@@ -3899,45 +3899,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 5140,
+            count: 5711,
           },
           black: {
             label: "Black, African American, or African",
-            count: 3363,
+            count: 3515,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 238,
+            count: 191,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 23,
+            count: 27,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 47,
+            count: 27,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 15,
+            count: 17,
           },
           other: {
             label: "Other",
-            count: 191,
+            count: 118,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 3060,
+            count: 3713,
           },
           male: {
             label: "Male",
-            count: 5700,
+            count: 5698,
           },
           transgender: {
             label: "Transgender",
-            count: 19,
+            count: 4,
           },
           nonbinary: {
             label: "Non-binary",
@@ -3949,19 +3949,19 @@ export const homelessnessData = {
   },
   TX: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 23122,
+          count: 28495,
         },
         age: {
           under18: {
             label: "<18",
-            count: 4615,
+            count: 5873,
           },
           "18-24": {
             label: "18-24",
-            count: 1596,
+            count: 2143,
           },
           from25to34: {
             label: "25-34",
@@ -3983,45 +3983,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 12795,
+            count: 15610,
           },
           black: {
             label: "Black, African American, or African",
-            count: 8143,
+            count: 10825,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 5942,
+            count: 8687,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 233,
+            count: 307,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 843,
+            count: 497,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 79,
+            count: 146,
           },
           other: {
             label: "Other",
-            count: 1029,
+            count: 929,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 9334,
+            count: 10511,
           },
           male: {
             label: "Male",
-            count: 13739,
+            count: 17753,
           },
           transgender: {
             label: "Transgender",
-            count: 49,
+            count: 50,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4033,19 +4033,19 @@ export const homelessnessData = {
   },
   UT: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 2807,
+          count: 3081,
         },
         age: {
           under18: {
             label: "<18",
-            count: 638,
+            count: 880,
           },
           "18-24": {
             label: "18-24",
-            count: 179,
+            count: 207,
           },
           from25to34: {
             label: "25-34",
@@ -4067,45 +4067,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2239,
+            count: 2518,
           },
           black: {
             label: "Black, African American, or African",
-            count: 242,
+            count: 253,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 584,
+            count: 696,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 29,
+            count: 39,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 147,
+            count: 156,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 32,
+            count: 35,
           },
           other: {
             label: "Other",
-            count: 118,
+            count: 80,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 1043,
+            count: 1232,
           },
           male: {
             label: "Male",
-            count: 1757,
+            count: 1845,
           },
           transgender: {
             label: "Transgender",
-            count: 7,
+            count: 4,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4117,19 +4117,19 @@ export const homelessnessData = {
   },
   VA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 6268,
+          count: 7020,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1432,
+            count: 1750,
           },
           "18-24": {
             label: "18-24",
-            count: 478,
+            count: 599,
           },
           from25to34: {
             label: "25-34",
@@ -4151,45 +4151,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 2545,
+            count: 2859,
           },
           black: {
             label: "Black, African American, or African",
-            count: 3337,
+            count: 3639,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 561,
+            count: 658,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 84,
+            count: 100,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 37,
+            count: 34,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 11,
+            count: 8,
           },
           other: {
             label: "Other",
-            count: 254,
+            count: 380,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 2561,
+            count: 2829,
           },
           male: {
             label: "Male",
-            count: 3700,
+            count: 4182,
           },
           transgender: {
             label: "Transgender",
-            count: 7,
+            count: 9,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4201,19 +4201,19 @@ export const homelessnessData = {
   },
   VI: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 341,
+          count: 448,
         },
         age: {
           under18: {
             label: "<18",
-            count: 22,
+            count: 14,
           },
           "18-24": {
             label: "18-24",
-            count: 8,
+            count: 16,
           },
           from25to34: {
             label: "25-34",
@@ -4235,41 +4235,41 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 51,
+            count: 8,
           },
           black: {
             label: "Black, African American, or African",
-            count: 257,
+            count: 76,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 37,
+            count: 15,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 1,
+            count: 0,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 6,
+            count: 0,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 1,
+            count: 0,
           },
           other: {
             label: "Other",
-            count: 25,
+            count: 1,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 80,
+            count: 35,
           },
           male: {
             label: "Male",
-            count: 261,
+            count: 50,
           },
           transgender: {
             label: "Transgender",
@@ -4285,19 +4285,19 @@ export const homelessnessData = {
   },
   VT: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1117,
+          count: 1559,
         },
         age: {
           under18: {
             label: "<18",
-            count: 263,
+            count: 422,
           },
           "18-24": {
             label: "18-24",
-            count: 125,
+            count: 197,
           },
           from25to34: {
             label: "25-34",
@@ -4319,45 +4319,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 968,
+            count: 1430,
           },
           black: {
             label: "Black, African American, or African",
-            count: 88,
+            count: 108,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 77,
+            count: 52,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 6,
+            count: 3,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 12,
+            count: 11,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 0,
+            count: 5,
           },
           other: {
             label: "Other",
-            count: 43,
+            count: 2,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 474,
+            count: 717,
           },
           male: {
             label: "Male",
-            count: 640,
+            count: 842,
           },
           transgender: {
             label: "Transgender",
-            count: 3,
+            count: 0,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4369,19 +4369,19 @@ export const homelessnessData = {
   },
   WA: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 20827,
+          count: 18442,
         },
         age: {
           under18: {
             label: "<18",
-            count: 4038,
+            count: 4360,
           },
           "18-24": {
             label: "18-24",
-            count: 1767,
+            count: 1752,
           },
           from25to34: {
             label: "25-34",
@@ -4403,45 +4403,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 12298,
+            count: 9623,
           },
           black: {
             label: "Black, African American, or African",
-            count: 4069,
+            count: 2942,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 2963,
+            count: 2464,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 470,
+            count: 254,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 1123,
+            count: 561,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 485,
+            count: 326,
           },
           other: {
             label: "Other",
-            count: 2382,
+            count: 2000,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 7992,
+            count: 6796,
           },
           male: {
             label: "Male",
-            count: 12781,
+            count: 8884,
           },
           transgender: {
             label: "Transgender",
-            count: 54,
+            count: 26,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4453,19 +4453,19 @@ export const homelessnessData = {
   },
   WI: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 5685,
+          count: 6055,
         },
         age: {
           under18: {
             label: "<18",
-            count: 1809,
+            count: 1970,
           },
           "18-24": {
             label: "18-24",
-            count: 558,
+            count: 624,
           },
           from25to34: {
             label: "25-34",
@@ -4487,45 +4487,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 3030,
+            count: 3325,
           },
           black: {
             label: "Black, African American, or African",
-            count: 2041,
+            count: 2146,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 474,
+            count: 462,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 45,
+            count: 65,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 204,
+            count: 167,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 13,
+            count: 11,
           },
           other: {
             label: "Other",
-            count: 352,
+            count: 341,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 2592,
+            count: 2783,
           },
           male: {
             label: "Male",
-            count: 3083,
+            count: 3266,
           },
           transgender: {
             label: "Transgender",
-            count: 10,
+            count: 6,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4537,19 +4537,19 @@ export const homelessnessData = {
   },
   WV: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 1387,
+          count: 2013,
         },
         age: {
           under18: {
             label: "<18",
-            count: 220,
+            count: 298,
           },
           "18-24": {
             label: "18-24",
-            count: 110,
+            count: 182,
           },
           from25to34: {
             label: "25-34",
@@ -4571,45 +4571,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 1112,
+            count: 1532,
           },
           black: {
             label: "Black, African American, or African",
-            count: 216,
+            count: 336,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 18,
+            count: 79,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 1,
+            count: 9,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 6,
+            count: 24,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 1,
+            count: 3,
           },
           other: {
             label: "Other",
-            count: 51,
+            count: 109,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 481,
+            count: 740,
           },
           male: {
             label: "Male",
-            count: 906,
+            count: 1272,
           },
           transgender: {
             label: "Transgender",
-            count: 0,
+            count: 1,
           },
           nonbinary: {
             label: "Non-binary",
@@ -4621,19 +4621,19 @@ export const homelessnessData = {
   },
   WY: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 857,
+          count: 757,
         },
         age: {
           under18: {
             label: "<18",
-            count: 195,
+            count: 182,
           },
           "18-24": {
             label: "18-24",
-            count: 61,
+            count: 71,
           },
           from25to34: {
             label: "25-34",
@@ -4655,15 +4655,15 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 660,
+            count: 548,
           },
           black: {
             label: "Black, African American, or African",
-            count: 39,
+            count: 41,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 121,
+            count: 102,
           },
           asian: {
             label: "Asian, or Asian American",
@@ -4671,7 +4671,7 @@ export const homelessnessData = {
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 128,
+            count: 108,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
@@ -4679,17 +4679,17 @@ export const homelessnessData = {
           },
           other: {
             label: "Other",
-            count: 28,
+            count: 58,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 338,
+            count: 294,
           },
           male: {
             label: "Male",
-            count: 518,
+            count: 462,
           },
           transgender: {
             label: "Transgender",
@@ -4705,19 +4705,19 @@ export const homelessnessData = {
   },
   Total: {
     years: {
-      2016: {
+      2014: {
         overall: {
           label: "Overall Homeless",
-          count: 549928,
+          count: 576450,
         },
         age: {
           under18: {
             label: "<18",
-            count: 120819,
+            count: 135701,
           },
           "18-24": {
             label: "18-24",
-            count: 50001,
+            count: 58043,
           },
           from25to34: {
             label: "25-34",
@@ -4739,45 +4739,45 @@ export const homelessnessData = {
         race: {
           white: {
             label: "White, or Caucasian",
-            count: 265660,
+            count: 228724,
           },
           black: {
             label: "Black, African American, or African",
-            count: 215177,
+            count: 206973,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: 121299,
+            count: 92365,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: 5603,
+            count: 4667,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: 15229,
+            count: 11302,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: 8734,
+            count: 6934,
           },
           other: {
             label: "Other",
-            count: 39525,
+            count: 26126,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: 217268,
+            count: 204189,
           },
           male: {
             label: "Male",
-            count: 330890,
+            count: 279788,
           },
           transgender: {
             label: "Transgender",
-            count: 1770,
+            count: 749,
           },
           nonbinary: {
             label: "Non-binary",
