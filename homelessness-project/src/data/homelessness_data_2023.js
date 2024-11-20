@@ -256,20 +256,20 @@ export const homelessnessData2023 = {
       2023: {
         overall: {
           label: "Overall Homeless",
-          count: " ",
+          count: null,
         },
         age: {
           under18: {
             label: "<18",
-            count: " ",
+            count: null,
           },
           "18-24": {
             label: "18-24",
-            count: " ",
+            count: null,
           },
           from25to34: {
             label: "25-34",
-            count: " ",
+            count: null,
           },
           from35to54: {
             label: "35-54",
@@ -277,59 +277,59 @@ export const homelessnessData2023 = {
           },
           from55to64: {
             label: "55-64",
-            count: " ",
+            count: null,
           },
           over64: {
             label: ">64",
-            count: " ",
+            count: null,
           },
         },
         race: {
           white: {
             label: "White, or Caucasian",
-            count: " ",
+            count: null,
           },
           black: {
             label: "Black, African American, or African",
-            count: " ",
+            count: null,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: " ",
+            count: null,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: " ",
+            count: null,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: " ",
+            count: null,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: " ",
+            count: null,
           },
           other: {
             label: "Other",
-            count: " ",
+            count: null,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: " ",
+            count: null,
           },
           male: {
             label: "Male",
-            count: " ",
+            count: null,
           },
           transgender: {
             label: "Transgender",
-            count: " ",
+            count: null,
           },
           nonbinary: {
             label: "Non-binary",
-            count: " ",
+            count: null,
           },
         },
       },
@@ -2272,20 +2272,20 @@ export const homelessnessData2023 = {
       2023: {
         overall: {
           label: "Overall Homeless",
-          count: " ",
+          count: null,
         },
         age: {
           under18: {
             label: "<18",
-            count: " ",
+            count: null,
           },
           "18-24": {
             label: "18-24",
-            count: " ",
+            count: null,
           },
           from25to34: {
             label: "25-34",
-            count: " ",
+            count: null,
           },
           from35to54: {
             label: "35-54",
@@ -2293,59 +2293,59 @@ export const homelessnessData2023 = {
           },
           from55to64: {
             label: "55-64",
-            count: " ",
+            count: null,
           },
           over64: {
             label: ">64",
-            count: " ",
+            count: null,
           },
         },
         race: {
           white: {
             label: "White, or Caucasian",
-            count: " ",
+            count: null,
           },
           black: {
             label: "Black, African American, or African",
-            count: " ",
+            count: null,
           },
           hispanic: {
             label: "Hispanic, or Latin(o)(a)(x)",
-            count: " ",
+            count: null,
           },
           asian: {
             label: "Asian, or Asian American",
-            count: " ",
+            count: null,
           },
           native: {
             label: "American Indian, Alaska Native, or Indigenous",
-            count: " ",
+            count: null,
           },
           pacific: {
             label: "Native Hawaiian or Other Pacific Islander",
-            count: " ",
+            count: null,
           },
           other: {
             label: "Other",
-            count: " ",
+            count: null,
           },
         },
         sexualOrientation: {
           female: {
             label: "Female",
-            count: " ",
+            count: null,
           },
           male: {
             label: "Male",
-            count: " ",
+            count: null,
           },
           transgender: {
             label: "Transgender",
-            count: " ",
+            count: null,
           },
           nonbinary: {
             label: "Non-binary",
-            count: " ",
+            count: null,
           },
         },
       },

@@ -256,7 +256,7 @@ export const homelessnessData2007 = {
       2007: {
         overall: {
           label: "Overall Homeless",
-          count: " ",
+          count: 0,
         },
         age: {
           under18: {
@@ -2272,7 +2272,7 @@ export const homelessnessData2007 = {
       2007: {
         overall: {
           label: "Overall Homeless",
-          count: " ",
+          count: 0,
         },
         age: {
           under18: {
