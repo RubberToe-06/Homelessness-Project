@@ -393,6 +393,10 @@ export default function App() {
         <option>Age</option>
       </select>
       <Line data={data} options={options} />
+      <small className="disclaimer">
+        Some data is missing for certain years and states; and from certain
+        demographic categories.
+      </small>
     </div>
   );
 }
