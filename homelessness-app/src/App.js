@@ -10,14 +10,15 @@ import {
   Title,
   Tooltip,
   Legend,
+  Filler,
 } from "chart.js";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [dataset, setDataset] = useState([]);
-  const [category, setCategory] = useState("None");
-  const [state, setState] = useState("Overall");
-  const [datasets, setDatasets] = useState([]);
+  const [stateNames, setStateNames] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedState, setSelectedState] = useState("All States");
+  const [selectedCategory, setSelectedCategory] = useState("None");
 
   ChartJS.register(
     CategoryScale,
@@ -26,15 +27,21 @@ function App() {
     LineElement,
     Title,
     Tooltip,
+    Filler,
     Legend
   );
-  const readXlsbFile = async (fileUrl, sheetIndex = 0) => {
+
+  const readXlsbFile = async (
+    fileUrl = `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`,
+    sheetIndex = 0
+  ) => {
     try {
       const response = await fetch(fileUrl);
       if (!response.ok) {
         throw new Error(`Failed to fetch file: ${response.statusText}`);
       }
-
+      setLoading(true);
+      console.log("reading xlsb file");
       const data = await response.arrayBuffer();
       const workbook = XLSX.read(data, { type: "array" });
 
@@ -44,97 +51,46 @@ function App() {
 
       // Convert sheet data to JSON
       const jsonData = XLSX.utils.sheet_to_json(worksheet);
+      setLoading(false);
       return jsonData;
     } catch (error) {
       console.error("Error reading xlsb file:", error);
     }
   };
 
-  const generateStateNames = (dataset) => {
-    const stateNames = [];
-    dataset.forEach((data) => {
-      stateNames.push(data.State);
+  // Read the xlsb file and log the data
+  useEffect(() => {
+    const fileUrl = `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`;
+    readXlsbFile(fileUrl, 1).then((data) => {
+      console.log(data);
+
+      // Create a new stateNames array by removing the last 2 elements and adding "All States" at the beginning.
+      const modifiedStateNames = [
+        "All States",
+        ...data.slice(0, -2).map((item) => item["State"]),
+      ];
+
+      // Set the state with the modified array
+      setStateNames(modifiedStateNames);
     });
-    stateNames.pop();
-    stateNames.pop();
-    stateNames.unshift("All States");
-    return stateNames;
-  };
+  }, []);
 
-  const getData = (state, category, subCategory = "none") => {
-    if (state === "All States" && category === "None") {
-      const data = [];
-      for (let i = 1; i < 18; i++) {
-        const dataset = readXlsbFile(
-          `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`,
-          i
-        );
-        data.push(dataset["Total"]["Overall Homeless"]);
-      }
-      return data;
-    } else if (state === "All States" && category !== "None") {
-      const data = [];
-      for (let i = 1; i < 18; i++) {
-        const dataset = readXlsbFile(
-          `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`,
-          i
-        );
-        switch (category) {
-          case "Age":
-            switch (subCategory) {
-              case "<18":
-                data.push(dataset["Total"]["Overall Homeless - Under 18"]);
-                break;
-              case "18-24":
-                data.push(dataset["Total"]["Overall Homeless - Age 18 to 24"]);
-                break;
-              case "25-34":
-                data.push(dataset["Total"]["Overall Homeless - Age 25 to 34"]);
-                break;
-              case "35-44":
-                data.push(dataset["Total"]["Overall Homeless - Age 35 to 44"]);
-                break;
-              case "45-54":
-                data.push(dataset["Total"]["Overall Homeless - Age 45 to 54"]);
-                break;
-              case "55-64":
-                data.push(dataset["Total"]["Overall Homeless - Age 55 to 64"]);
-                break;
-              case ">64":
-                data.push(dataset["Total"]["Overall Homeless - Over 64"]);
-                break;
-
-              default:
-                break;
-            }
-            break;
-          case "Gender Identity":
-            switch (subCategory) {
-              default:
-                break;
-            }
-            break;
-          default:
-            break;
-        }
-      }
-      return data;
-    }
-  };
-
-  const generateDatasets = (state, category) => {
-    const datasets = [];
-    if (category === "None" && state === "Overall") {
-      datasets.push({
-        label: "Overall",
-        data: getData("Overall", "None"),
-        fill: false,
-        borderColor: "rgb(75, 192, 192)",
-        tension: 0.1,
-      });
-    }
-
-    setDatasets(datasets);
+  const options = {
+    responsive: true,
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Year",
+        },
+      },
+      y: {
+        title: {
+          display: true,
+          text: "Total Homeless Count",
+        },
+      },
+    },
   };
 
   const data = {
@@ -157,78 +113,51 @@ function App() {
       "2022",
       "2023",
     ],
-    datasets: datasets,
+    datasets: [
+      {
+        label: "Overall Homeless",
+        data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+        borderColor: "rgba(75, 192, 192, 1)",
+        backgroundColor: "rgba(75, 192, 192, 0.2)",
+        fill: false,
+      },
+    ],
   };
 
-  const options = {
-    responsive: true,
-    scales: {
-      x: {
-        title: {
-          display: true,
-          text: "Date",
-        },
-      },
-      y: {
-        title: {
-          display: true,
-          text: "Value",
-        },
-      },
-    },
-  };
-
-  useEffect(() => {
-    generateDatasets(state, category);
-  }, [state, category]);
-
-  return (
+  return loading ? (
+    <div>
+      <p>Loading...</p>
+    </div>
+  ) : (
     <div className="App">
       <h1>React App</h1>
-      <select>
-        <option value="None" onClick={() => setCategory("None")}>
-          None
-        </option>
-        <option value="Age" onClick={() => setCategory("Age")}>
-          Age
-        </option>
-        <option
-          value="Race/Ethnicity"
-          onClick={() => setCategory("Race/Ethnicity")}
-        >
-          Race/Ethnicity
-        </option>
-        <option
-          value="Gender Identity"
-          onClick={() => setCategory("Gender Identity")}
-        >
-          Gender Identity
-        </option>
-      </select>
-
-      {/*Get the state abbreviations from the dataset*/}
-      <select>
-        {generateStateNames(dataset).map((stateName) => {
-          return (
-            <option
-              key={stateName}
-              value={stateName}
-              onClick={() => setState(stateName)}
-            >
-              {stateName}
-            </option>
+      <select
+        onChange={(option) => {
+          setSelectedState(option.target.value);
+          console.log(
+            "Selected: " + selectedCategory + ", " + option.target.value
           );
-        })}
-      </select>
-      <button
-        onClick={() => {
-          // Ensure the file is in the "public" folder for the fetch to work
-          const fileUrl = `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`;
-          readXlsbFile(fileUrl, 1);
         }}
       >
-        Read XLSB File
-      </button>
+        {stateNames.map((item) => (
+          <option key={item} value={item}>
+            {item}
+          </option>
+        ))}
+      </select>
+      <select
+        onChange={(option) => {
+          setSelectedCategory(option.target.value);
+          console.log(
+            "Selected: " + option.target.value + ", " + selectedState
+          );
+        }}
+      >
+        <option value="None">None</option>
+        <option value="Race/Ethnicity">Race/Ethnicity</option>
+        <option value="Age">Age</option>
+        <option value="Gender Identity">Gender Identity</option>
+      </select>
       <Line options={options} data={data} className="graph" />
     </div>
   );
