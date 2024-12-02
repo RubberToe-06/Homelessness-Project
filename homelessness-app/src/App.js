@@ -19,7 +19,18 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [selectedState, setSelectedState] = useState("All States");
   const [selectedCategory, setSelectedCategory] = useState("None");
-  const [datasets, setDatasets] = useState([]);
+  const [datasets, setDatasets] = useState([
+    {
+      label: "Overall Homeless",
+      data: [
+        647258, 639784, 630227, 637077, 623788, 621553, 590364, 576450, 564708,
+        549928, 550996, 552830, 567715, 580466, 380630, 582462, 653104,
+      ],
+      fill: false,
+      borderColor: "rgb(75, 192, 192)",
+      tension: 0.1,
+    },
+  ]);
   const fileUrl = `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`;
 
   ChartJS.register(
@@ -42,7 +53,7 @@ function App() {
       if (!response.ok) {
         throw new Error(`Failed to fetch file: ${response.statusText}`);
       }
-      setLoading(true);
+
       console.log("reading xlsb file");
       const data = await response.arrayBuffer();
       const workbook = XLSX.read(data, { type: "array" });
@@ -53,7 +64,7 @@ function App() {
 
       // Convert sheet data to JSON
       const jsonData = XLSX.utils.sheet_to_json(worksheet);
-      setLoading(false);
+
       return jsonData;
     } catch (error) {
       console.error("Error reading xlsb file:", error);
@@ -63,6 +74,7 @@ function App() {
   // Read the xlsb file and log the data
   useEffect(() => {
     const fileUrl = `${process.env.PUBLIC_URL}/PIT-Counts.xlsb`;
+    setLoading(true);
     readXlsbFile(fileUrl, 1).then((data) => {
       console.log(data);
 
@@ -75,13 +87,9 @@ function App() {
       // Set the state with the modified array
       setStateNames(modifiedStateNames);
 
-      // Set the initial data to "All States" and "None"
+      setLoading(false);
     });
   }, []);
-
-  useEffect(() => {
-    generateDatasets(selectedState, selectedCategory);
-  }, [selectedState, selectedCategory]);
 
   const options = {
     responsive: true,
@@ -127,6 +135,7 @@ function App() {
   // TODO: Implement the fetchData function
   const fetchData = (state, category, subCategory = "None") => {
     const data = [];
+
     if (category === "None" && state === "All States") {
       for (let i = 1; i < 18; i++) {
         readXlsbFile(fileUrl, i).then((jsonData) => {
@@ -154,10 +163,12 @@ function App() {
         });
       }
     }
+
     return data;
   };
   const generateDatasets = (state, category) => {
     const datasets = [];
+    setLoading(true);
     if (category === "None") {
       datasets.push({
         label: "Total Homeless Count",
@@ -302,6 +313,7 @@ function App() {
         });
       }
     }
+    setLoading(false);
     setDatasets(datasets);
   };
   return loading ? (
@@ -310,13 +322,16 @@ function App() {
     </div>
   ) : (
     <div className="App">
-      <h1>React App</h1>
+      <h1>Homelessness Data Visualizer</h1>
+
+      <h2>State</h2>
       <select
         onChange={(option) => {
           setSelectedState(option.target.value);
           console.log(
             "Selected: " + selectedCategory + ", " + option.target.value
           );
+          generateDatasets(selectedState, selectedCategory);
         }}
       >
         {stateNames.map((item) => (
@@ -325,12 +340,14 @@ function App() {
           </option>
         ))}
       </select>
+      <h2>Divide by:</h2>
       <select
         onChange={(option) => {
           setSelectedCategory(option.target.value);
           console.log(
             "Selected: " + option.target.value + ", " + selectedState
           );
+          generateDatasets(selectedState, selectedCategory);
         }}
       >
         <option value="None">None</option>
@@ -338,7 +355,13 @@ function App() {
         <option value="Age">Age</option>
         <option value="Gender Identity">Gender Identity</option>
       </select>
-      <Line options={options} data={data} className="graph" />
+      <div className="graph">
+        <Line options={options} data={data} />
+      </div>
+
+      <a href="https://www.hud.gov/findshelter">
+        Find homeless shelters and essential services near you
+      </a>
     </div>
   );
 }
